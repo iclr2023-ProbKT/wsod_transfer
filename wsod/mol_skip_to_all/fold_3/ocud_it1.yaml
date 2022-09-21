@@ -1,0 +1,30 @@
+OUTPUT_DIR: "output/mol_skip_to_all_fold_3/ocud_it1"
+MODEL:
+  META_ARCHITECTURE: "GeneralizedRCNN"
+  WEIGHT: "output/mol_skip_to_all_fold_3/ocud_it0/model_final.pth"
+  RPN:
+    PRE_NMS_TOP_N_TEST: 6000
+    POST_NMS_TOP_N_TEST: 300
+    ANCHOR_SIZES: (128, 256, 512)
+  ROI_BOX_HEAD:
+    NUM_CLASSES: 2
+  ROI_HEADS:
+    SCORE_THRESH: 0.01
+DATASETS:
+  # ok to use coco60_train2017_21987 only, coco60_val2017_969 has only 969 images
+  TRAIN: ("mol_skip_fold_3","mol_pseudo_fold_3",)
+  TEST: ("mol_all_test","mol_skip_test","mol_ood_test",)
+INPUT:
+  IGNORE_CLS: True  # ignore class labels
+  MIN_SIZE_TRAIN: (300,)
+  MAX_SIZE_TRAIN: 300
+  MIN_SIZE_TEST: 300
+  MAX_SIZE_TEST: 300
+SOLVER:
+  BASE_LR: 0.004
+  # set as 12000, 17500 to be consistent with the paper
+  STEPS: (24000,) # (11478,)
+  MAX_ITER: 35000 # 17217
+  WEIGHT_DECAY: 0.0001
+  CHECKPOINT_PERIOD: 100000
+  IMS_PER_BATCH: 4

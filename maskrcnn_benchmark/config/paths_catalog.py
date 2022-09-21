@@ -151,6 +151,168 @@ class DatasetCatalog(object):
             "mode": "mask",
             "mini": 10,
         },
+        "clevr_skip": {
+            "fold": 0,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_skip_cube/train/",
+        },
+        "clevr_skip_fold_1": {
+            "fold": 1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_skip_cube/train/",
+        }, 
+        "clevr_skip_fold_2": {
+            "fold": 2,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_skip_cube/train/",
+        },
+        "clevr_skip_fold_3": {
+            "fold": 3,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_skip_cube/train/",
+        },
+        "clevr_skip_fold_4": {
+            "fold": 4,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_skip_cube/train/",
+        },
+        "clevr_skip_test": {
+            "fold": -1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_skip_cube/test/",
+        },
+        "clevr_pseudo": {
+            "fold": 0,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_pseudo_fold_1": {
+            "fold": 1,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_pseudo_fold_2": {
+            "fold": 2,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_pseudo_fold_3": {
+            "fold": 3,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_pseudo_fold_4": {
+            "fold": 4,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_all": {
+            "fold": 0,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_all_fold_1": {
+            "fold": 1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_all_fold_2": {
+            "fold": 2,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_all_fold_3": {
+            "fold": 3,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_all_fold_4": {
+            "fold": 4,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_all_nofold": {
+            "fold": -1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/train/",
+        },
+        "clevr_all_test": {
+            "fold": -1,
+            "data_dir": "../ProbKT/generate_data/clevr/clevr_all/test/",
+        },
+        "clevr_ood_test":{
+            "fold": -1,
+            "data_dir": "../ProbKT/generate_data/clevr/test_ood/",
+        },
+        "mol_skip": {
+            "fold": 0,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_skip/train/",
+        },
+        "mol_skip_fold_1": {
+            "fold": 1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_skip/train/",
+        },
+        "mol_skip_fold_2": {
+            "fold": 2,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_skip/train/",
+        },
+        "mol_skip_fold_3": {
+            "fold": 3,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_skip/train/",
+        },
+        "mol_skip_fold_4": {
+            "fold": 4,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_skip/train/",
+        },
+        "mol_pseudo": {
+            "fold": 0,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        }, 
+        "mol_pseudo_fold_1": {
+            "fold": 1,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        }, 
+        "mol_pseudo_fold_2": {
+            "fold": 2,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        }, 
+        "mol_pseudo_fold_3": {
+            "fold": 3,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        }, 
+        "mol_pseudo_fold_4": {
+            "fold": 4,
+            "pseudo": 1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        }, 
+        "mol_all": {
+            "fold": 0,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        },
+        "mol_all_fold_1": {
+            "fold": 1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        },
+        "mol_all_fold_2": {
+            "fold": 2,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        },
+        "mol_all_fold_3": {
+            "fold": 3,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        },
+        "mol_all_fold_4": {
+            "fold": 4,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        },
+        "mol_all_nofold": {
+            "fold": -1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/train/",
+        }, 
+        "mol_all_test": {
+            "fold": -1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/test/",
+        },
+        "mol_skip_test": {
+            "fold": -1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_skip/test/",
+        },
+        "mol_ood_test": {
+            "fold": -1,
+            "data_dir": "../ProbKT/generate_data/molecules/molecules_all/test_ood/",
+        },
     }
 
     @staticmethod
@@ -200,6 +362,17 @@ class DatasetCatalog(object):
             attrs["img_dir"] = os.path.join(data_dir, attrs["img_dir"])
             attrs["ann_dir"] = os.path.join(data_dir, attrs["ann_dir"])
             return dict(factory="CityScapesDataset", args=attrs)
+        elif "mnist" in name:
+            #data_dir = DatasetCatalog.DATA_DIR
+            attrs = deepcopy(DatasetCatalog.DATASETS[name])
+            return dict(factory="Objects_Detection_Dataset", args=attrs)
+        elif "clevr" in name:
+            #data_dir = DatasetCatalog.DATA_DIR
+            attrs = deepcopy(DatasetCatalog.DATASETS[name])
+            return dict(factory="Objects_Detection_Dataset", args=attrs)
+        elif "mol" in name:
+            attrs = deepcopy(DatasetCatalog.DATASETS[name])
+            return dict(factory="Objects_Detection_Dataset", args=attrs)
         raise RuntimeError("Dataset not available: {}".format(name))
 
 
