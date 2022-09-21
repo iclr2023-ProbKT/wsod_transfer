@@ -69,8 +69,8 @@ for img_id, (t, p) in tqdm(p_trainval.items(), mininterval=20):
             id += 1
             df = df.append({'label': int(l)-1, 'xmin': int(bbox_copy[0]), 'ymin': int(bbox_copy[1]), 'xmax': int(bbox_copy[2]), 'ymax': int(bbox_copy[3])}, ignore_index=True)
     if "mnist" in folder:
-       df.astype(int).to_csv(os.path.join('/home/moldenho/Projects/ProbKT/generate_data/mnist/mnist3_all/train/','pseudo_label',f"{img_id}.txt"), index = False)
+       df.astype(int).to_csv(os.path.join('../ProbKT/generate_data/mnist/mnist3_all/train/','pseudo_label',f"{img_id}.txt"), index = False)
     if "clevr" in folder:
-       df.astype(int).to_csv(os.path.join('../rcnn-deepproblog/generate_data/clevr/clevr_all/train/','pseudo_label',f"{img_id}.txt"), index = False)
+       df.astype(int).to_csv(os.path.join('../ProbKT/generate_data/clevr/clevr_all/train/','pseudo_label',f"{img_id}.txt"), index = False)
     if "mol" in folder:
-       df.astype(int).to_csv(os.path.join('../rcnn-deepproblog/generate_data/molecules/molecules_all/train/','pseudo_label',f"{img_id}.txt"), index = False)
+       df.astype(int).to_csv(os.path.join('../ProbKT/generate_data/molecules/molecules_all/train/','pseudo_label',f"{img_id}.txt"), index = False)
